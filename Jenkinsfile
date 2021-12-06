@@ -12,7 +12,7 @@ pipeline {
    }
    stage('Restore packages'){
 	   steps{
-		   sh 'dotnet restore WebApplication.sln'
+		   bat 'dotnet restore WebApplication.sln'
 		}
 	 }
    stage('Test') {
